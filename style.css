@@ -1,0 +1,113 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    width : 100%;
+    min-height : 100vh;
+    background : linear-gradient(45deg, #010758, #490d61);
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+.container{
+    color : #fff;
+    padding : 10px 20px;
+    text-align : center;
+}
+.container h1{
+    text-align: center;
+    font-size : 2.5rem;
+    font-weight : 600;
+    margin-bottom : 35px;
+}
+.container h1 span{
+    color : #ff2963;
+    border-bottom : 3px solid #fff;
+}
+#text-content{
+    width : 100%;
+    background: #403d84;
+    color : #fff;
+    border : 0;
+    outline : 0;
+    width : 600px;
+    height : 250px;
+    font-size : 1rem;
+    resize : none;
+    border-radius : 10px;
+    padding : 10px;
+}
+#text-content::placeholder{
+    color : #ddd;
+    font-size : 1rem;
+}
+.row{
+    margin-top : 30px;
+    display : flex;
+    gap : 20px;
+    width : 600px;
+    flex-wrap : wrap;
+    flex-direction: row;
+}
+.row select{
+    height : 50px;
+    flex : 1;
+    background-color: #403d84;
+    border-radius : 35px;
+    color : #fff;
+    border : 0;
+    outline : 0;
+    padding : 10px;
+    font-size : 1rem;
+    appearance : none;
+    background-image : url('./images/dropdown.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-y : 15px;
+    background-position-x : calc(100% - 17px);
+    cursor : pointer;
+    width : 50%;
+}
+.row button{
+    background-color : #ff2963;
+    cursor : pointer;
+    border : 0;
+    outline : 0;
+    padding : 10px 15px;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    color : #fff;
+    font-weight : 500;
+    font-size : 1rem;
+    gap : 10px;
+    border-radius : 35px;
+}
+.row button img{
+    height : 15px;
+    background-color: #ff2963;
+}
+
+@media screen and (max-width : 630px){
+    h1{
+        margin : 0px auto;
+        width : 90vw;
+    }
+    #text-content{
+        width : 90vw;
+    }
+    .row{
+        flex-direction : column;
+        align-items : center;
+        justify-content : center;
+    }
+    .row select{
+        width : 85vw;
+    }
+    .row button{
+        width : 100px;
+    }
+}
